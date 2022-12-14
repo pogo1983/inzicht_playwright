@@ -1,7 +1,7 @@
-import {InzichtSettings} from '/GIT/Inzicht3_playwright/POM/InzichtSettings/';
+import {InzichtSettings} from '../InzichtTest';
 
 // @ts-check
-const { test, expect } = require('@playwright/test/InzichtTest');
+const { test, expect } = require('@playwright/test');
 
 test('homepage has Playwright in title and get started link linking to the intro page', async ({ page }) => {
   await page.goto('https://04-inzicht2.imfint.local/#/');
